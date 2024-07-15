@@ -17,9 +17,6 @@ public class Main {
 
         if (age >= 18) {
             System.out.println("Человеку 18 или больше лет.");
-        }
-
-        if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний.");
         } else {
             System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать.");
@@ -102,13 +99,13 @@ public class Main {
 
         if (passengersNumber >= wagonCapacity) {
             System.out.println("Вагон полностью забит.");
-         } else {
-            if (passengersNumber < wagonCapacity && passengersNumber >= seats) {
+        } else {
+            if (passengersNumber >= seats) {
                 System.out.println("Осталось " + (wagonCapacity - passengersNumber) + " стоячих мест");
             } else {
                 System.out.println("Осталось " + (seats - passengersNumber) + " сидячих мест и " + standing + " стоячих мест");
             }
-          }
+        }
 
         // task 7
         System.out.println("Задача 7");
